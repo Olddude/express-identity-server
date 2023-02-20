@@ -1,0 +1,15 @@
+{
+  "cookie": {
+    "originalMaxAge": 30000,
+    "expires": "2023-02-20T01:17:08.202Z",
+    "secure": true,
+    "httpOnly": true,
+    "path": "/",
+    "sameSite": "strict"
+  },
+  "passport": {
+    "user": {
+      "id": "0e4c1780-41fb-4d3d-ad76-4f5d0d5a4b52"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Users</title>
+</head>
+<body class="container-fluid">
+  <div class="user">
+    <h1>Users</h1>
+    <ul class="list-group user__users">
+      <% for (let i = 0; i < users.length; i++) { %>
+        <li class="list-group-item user__users-item">
+          <div class="row">
+            <div class="col-sm-2"><%= users[i].id %></div>
+            <div class="col-sm-1"><%= users[i].firstname %></div>
+            <div class="col-sm-1"><%= users[i].lastname %></div>
+            <div class="col-sm-3"><%= users[i].email %></div>
+            <div class="col-sm-2"><%= users[i].avatar %></div>
+            <div class="col-sm-1"><%= users[i].createdAt %></div>
+            <div class="col-sm-1"><%= users[i].updatedAt %></div>
+          </div>
+        </li>
+      <% } %>
+    </ul>
+  </div>
+</body>
+</html>

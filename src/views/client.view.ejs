@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Clients</title>
+</head>
+<body class="container-fluid">
+  <div class="client">
+    <h1>Clients</h1>
+    <ul class="list-group client__clients">
+      <% for (let i = 0; i < clients.length; i++) { %>
+        <li class="list-group-item client__clients-item">
+          <div class="row">
+            <div class="col-sm-2"><%= clients[i].id %></div>
+            <div class="col-sm-1"><%= clients[i].secret %></div>
+            <div class="col-sm-1"><%= clients[i].scope %></div>
+            <div class="col-sm-1"><%= clients[i].createdAt %></div>
+            <div class="col-sm-1"><%= clients[i].updatedAt %></div>
+          </div>
+        </li>
+      <% } %>
+    </ul>
+  </div>
+</body>
+</html>
