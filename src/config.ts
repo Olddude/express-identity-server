@@ -2,10 +2,6 @@ import process from 'process';
 
 import ms from 'ms';
 
-/**
- * Create config.
- * @return {object}
- */
 async function createConfig() {
   const logLevel = process.env.LOG_LEVEL || 'debug';
   return {

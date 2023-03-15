@@ -31,5 +31,5 @@
       }
     ]
   },
-  "ignorePatterns": ["scripts/**/*.js"]
+  "ignorePatterns": ["**/*.js"]
 }
